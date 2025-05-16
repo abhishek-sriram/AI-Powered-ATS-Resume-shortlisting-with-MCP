@@ -6,13 +6,16 @@ import traceback
 import time
 import logging
 import requests
-from settings import API_KEY  
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 logging.basicConfig(level=logging.INFO)
 app = FastAPI()
 
 # Hardcoded Groq API key (replace with your actual key)
-GROQ_API_KEY = API_KEY
+GROQ_API_KEY = os.getenv("API_KEY")
 
 class ResumeInput(BaseModel):
     jd: str
