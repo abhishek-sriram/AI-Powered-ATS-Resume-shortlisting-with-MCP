@@ -3,7 +3,7 @@ import requests
 import streamlit as st
 from jd_matcher import extract_text_from_pdf
 
-MCP_SERVER_URL = "https://ai-powered-ats-resume-shortlisting-with-cvww.onrender.com/shortlist"
+MCP_SERVER_URL = "https://ai-powered-ats-resume-shortlisting-with.onrender.com/shortlist"
 
 st.set_page_config(page_title="AI Powered ATS Shortlisting with MCP", layout="centered")
 st.title("AI Powered ATS Shortlisting with MCP")
